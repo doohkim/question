@@ -1,4 +1,4 @@
-models.py 
+# models.py 
 
 # 정산정보
 class SettlementInformation(models.Model):
@@ -20,7 +20,7 @@ class SettlementAccount(models.Model):
 
 
 
-serializers.py
+# serializers.py
 
 # 유저 정산 계좌 Create
 class SettlementAccountCreateSerializer(ModelSerializer):
@@ -76,7 +76,7 @@ class SettlementInformationCreateSerializer(ModelSerializer):
         
 
 
-views.py
+# views.py
 
 class SettlementInformationListCreateAPIVew(generics.ListCreateAPIView):
     permission_classes = [IsAuthenticated, ]
